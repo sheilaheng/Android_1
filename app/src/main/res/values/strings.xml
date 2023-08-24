@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Getting_started_jetpack</string>
+    <string name="title_activity_login">login_activity</string>
+    <string name="title_activity_signup">signupActivity</string>
+</resources>
