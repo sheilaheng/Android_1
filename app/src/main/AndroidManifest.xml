@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Getting_started_jetpack"
         tools:targetApi="31">
         <activity
+            android:name=".Scrollabelistview"
+            android:exported="false"
+            android:label="@string/title_activity_scrollabelistview"
+            android:theme="@style/Theme.Getting_started_jetpack" />
+        <activity
+            android:name=".MpesalistviewActivity"
+            android:exported="false"
+            android:label="@string/title_activity_mpesalistview"
+            android:theme="@style/Theme.Getting_started_jetpack" />
+        <activity
+            android:name=".ListviewexActivity"
+            android:exported="false"
+            android:label="@string/title_activity_listviewex"
+            android:theme="@style/Theme.Getting_started_jetpack" />
+        <activity
             android:name=".ImageActivity"
             android:exported="false"
             android:label="@string/title_activity_image"
