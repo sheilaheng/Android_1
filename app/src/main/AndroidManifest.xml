@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Getting_started_jetpack"
         tools:targetApi="31">
         <activity
+            android:name=".Mainintents"
+            android:exported="false"
+            android:label="@string/title_activity_mainintents"
+            android:theme="@style/Theme.Getting_started_jetpack" />
+        <activity
             android:name=".Scrollabelistview"
             android:exported="false"
             android:label="@string/title_activity_scrollabelistview"

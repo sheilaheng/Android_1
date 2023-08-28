@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -53,6 +54,13 @@ fun Home(){
             .fillMaxSize()
     ) {
 
+        Image(painter = painterResource(id = R.drawable.bg1),
+            contentDescription = null,
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.Transparent)
+
+        )
 
     }
 
@@ -106,6 +114,24 @@ fun Home(){
         {
 
             Text(text = "SCROLL", fontSize = 20.sp)
+        }
+
+        //another button
+
+        var intents = LocalContext.current
+
+        Button(onClick = {
+            intents.startActivity(Intent(intents,Mainintents::class.java)) },
+            shape = RoundedCornerShape(5.dp),
+            modifier = Modifier.fillMaxWidth()
+
+        )
+
+
+
+        {
+
+            Text(text = "INTENTS", fontSize = 20.sp)
         }
 
     }

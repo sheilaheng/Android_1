@@ -6,4 +6,5 @@
     <string name="title_activity_listviewex">ListviewexActivity</string>
     <string name="title_activity_mpesalistview">MpesalistviewActivity</string>
     <string name="title_activity_scrollabelistview">Scrollabelistview</string>
+    <string name="title_activity_mainintents">Mainintents</string>
 </resources>
