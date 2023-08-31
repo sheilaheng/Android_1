@@ -123,6 +123,13 @@ fun Myintets(){
         Button(onClick = {
 
 
+            val phoneNumber = "+254750500200"
+            val callIntent = Intent(Intent.ACTION_CALL, Uri.parse("tel:$phoneNumber"))
+
+            if (checkSelfPermission("android.permission.CALL_PHONE") != PackageManager.PERMISSION_GRANTED) { requestPermissions(arrayOf("android.permission.CALL_PHONE"),1) }
+
+            else { calllaunch.startActivity(callIntent)}
+
         },
             shape = RoundedCornerShape(10.dp),
             modifier = Modifier.fillMaxWidth()
